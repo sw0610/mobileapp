@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/editText"
+        android:layout_alignBottom="@id/editText"
+        android:gravity="center|right"
+        android:paddingLeft="60dp"
+        android:text="이름"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_alignLeft="@id/textView"
+        android:layout_alignTop="@id/radiogroup"
+        android:layout_alignRight="@id/textView"
+        android:layout_alignBottom="@id/radiogroup"
+        android:gravity="center|right"
+        android:text="성별"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText"
+        android:layout_toRightOf="@id/textView2"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText"
+            android:layout_toRightOf="@id/textView2"
+            android:text="남성"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText"
+            android:layout_alignTop="@id/radioButton"
+            android:layout_alignBottom="@id/radioButton"
+            android:layout_toRightOf="@id/radioButton"
+            android:text="여성"
+            android:textSize="20sp" />
+    </RadioGroup>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_alignLeft="@id/textView2"
+        android:layout_alignTop="@id/editText2"
+        android:layout_alignRight="@id/textView2"
+        android:layout_alignBottom="@id/editText2"
+        android:gravity="center|right"
+        android:text="학번"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radiogroup"
+        android:layout_toRightOf="@id/textView3"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_alignLeft="@id/textView3"
+        android:layout_alignTop="@id/editText3"
+        android:layout_alignRight="@id/textView3"
+        android:layout_alignBottom="@id/editText3"
+        android:gravity="center|right"
+        android:text="자기소개"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText2"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@id/textView4"
+        android:ems="10"
+        android:inputType="none|textMultiLine"
+        android:lines="5" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText3"
+        android:layout_alignParentRight="true"
+        android:onClick="onBtn1Clicked"
+        android:text="초기화" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText3"
+        android:layout_toLeftOf="@id/button"
+        android:onClick="onBtn2Clicked"
+        android:text="확인" />
+
+
+
+
+</RelativeLayout>

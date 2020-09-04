@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">hw6</string>
+    <string name="my_name">20181006 Doo Sowon</string>
+    <string name="input_id">Please, input your id.</string>
+    <string name="input_naem">Please, input your name.</string>
+    <string name="text_id">id</string>
+    <string name="text_name">name</string>
+    <string name="btn">INPUT</string>
+</resources>

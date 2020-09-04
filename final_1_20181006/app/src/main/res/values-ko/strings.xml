@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">20181006 두소원</string>
+    <string name="add_account">새 계정 추가</string>
+    <string name="end">종료</string>
+    <string name="site_name">사이트 이름</string>
+    <string name="URL">URL</string>
+    <string name="user_account">사용자 계정</string>
+    <string name="password">비밀번호</string>
+    <string name="password_2">비밀번호 확인</string>
+    <string name="cancel">취소</string>
+    <string name="add">등록</string>
+    <string name="sub_app">수정하기</string>
+</resources>

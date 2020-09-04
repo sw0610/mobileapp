@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/image_small" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/my_style1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/my_color"
+        android:text="@string/text_id"
+        android:textSize="@dimen/my_textsize" />
+
+    <EditText
+        android:id="@+id/editText1"
+        style="@style/my_style2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_id"
+        android:inputType="number"
+        android:textColorHint="@color/text_color"
+        android:textSize="@dimen/my_textsize" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/my_style2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/my_color"
+        android:text="@string/text_name"
+        android:textSize="@dimen/my_textsize" />
+
+    <EditText
+        android:id="@+id/editText2"
+        style="@style/my_style2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_id"
+        android:inputType="textPersonName"
+        android:lines="1"
+        android:textColorHint="@color/text_color"
+        android:textSize="@dimen/my_textsize" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/btn_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onBtnClicked"
+        android:text="@string/btn"
+        android:textSize="@dimen/my_textsize" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:textSize="@dimen/my_textsize" />
+</LinearLayout>

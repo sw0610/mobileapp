@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textView2"
+        android:layout_alignTop="@id/editText"
+        android:layout_alignRight="@id/textView2"
+        android:layout_alignBottom="@id/editText"
+        android:gravity="center|right"
+        android:text="이름"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/textView"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_alignTop="@id/editText2"
+        android:layout_alignBottom="@id/editText2"
+        android:gravity="center|right"
+        android:paddingLeft="20dp"
+        android:text="비밀번호"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText"
+        android:layout_toRightOf="@id/textView2"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

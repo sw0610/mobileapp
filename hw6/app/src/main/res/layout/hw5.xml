@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:srcCompat="@drawable/image_small" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ID:"
+        android:textSize="@dimen/my_textsize"
+        android:background="@color/my_color"
+        style="@style/my_style1" />
+
+    <EditText
+        android:id="@+id/editText1"
+        style="@style/my_style2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_id"
+        android:inputType="number"
+        android:textColorHint="@color/text_color"
+        android:textSize="@dimen/my_textsize" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/my_style2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/my_color"
+        android:text="Name:"
+        android:textSize="@dimen/my_textsize" />
+
+    <EditText
+        android:id="@+id/editText2"
+        style="@style/my_style2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_id"
+        android:inputType="textPersonName"
+        android:lines="1"
+        android:textColorHint="@color/text_color"
+        android:textSize="@dimen/my_textsize" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onBtnClicked"
+        android:textSize="@dimen/my_textsize"
+        style="@style/btn_style"
+        android:text="Input" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/my_textsize"
+        android:layout_gravity="bottom|left" />
+</LinearLayout>
